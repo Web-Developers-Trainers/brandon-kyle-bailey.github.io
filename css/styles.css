@@ -12,8 +12,9 @@
 */
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothings: antialiased;
 }
 
 body.active {
@@ -252,7 +253,6 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* background: #3498db */
 }
 
 .background-alt {
@@ -267,7 +267,8 @@ footer {
     background: url(../images/bg.jpg);
     background-size: cover;
     padding: 15px;
-    overflow: hidden
+    overflow: hidden;
+    /* box-shadow: inset 12px 10px 150px #000000, inset -12px -10px 150px #000000; */
 }
 
 #lead-content {
@@ -276,7 +277,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
 }
 
 #lead-content h1,
@@ -284,6 +285,7 @@ footer {
     margin: 0;
     color: #fff;
     /* color: #000000; */
+    text-shadow: 4px 4px 8px #000000;
 }
 
 #lead-content h1 {
