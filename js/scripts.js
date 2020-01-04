@@ -35,8 +35,8 @@
         }
     });
 
-    // Animate to section when nav is clicked
-    $('.work-btn').click(function(e) {
+    // Animate to section when lead button is clicked
+    $('#lead-content a').click(function(e) {
 
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
