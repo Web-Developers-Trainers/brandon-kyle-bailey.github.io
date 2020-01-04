@@ -265,7 +265,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/bg.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -283,12 +283,11 @@ footer {
 #lead-content h1,
 #lead-content h2 {
     margin: 0;
-    /* text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; */
-    /* color: rgb(185, 185, 185); */
+    color: #fff;
+    /* color: #000000; */
 }
 
 #lead-content h1 {
-    color: #fff;
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
@@ -297,7 +296,6 @@ footer {
 }
 
 #lead-content h2 {
-    color: #fff;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px
