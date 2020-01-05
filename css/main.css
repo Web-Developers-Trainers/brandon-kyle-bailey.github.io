@@ -226,10 +226,17 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 5px;
 }
 
 .project-card {
     flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.project-card a:hover {
+    color: red;
 }
 
 
