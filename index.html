@@ -1,189 +1,130 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Brandon Bailey</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Giorgi Tsereteli</title>
 </head>
-
 <body>
-    <!-- <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i> -->
-    </div>
-    <!-- End #mobile-menu-toggle -->
+   <!-- Navigation Bar -->
     <header>
+        <nav id="nav">
+           <div class="menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <!-- End header -->
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Brandon Bailey</h1>
-            <h2>Full Stack Developer</h2>
-            <a href="#projects" class="btn-rounded-white">View My Work</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container projects-grid">
-            <div class="row">
-                <a href="http://google.com" target="_blank">
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="https://camo.githubusercontent.com/c5b71dcfe1c6f7c23cd2414b08d73856801add30/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f353736302f312a58775a433531453161527433586331535349753234412e706e67" />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Project Name Here</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                            </p>
-                            <a href="#">Live Demo</a>
-                            <br>
-                            <a href="#">Source Code</a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </a>
-                <a href="https://brandon-kyle-bailey.github.io/netflix-landing-page/" target="_blank">
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="https://camo.githubusercontent.com/c5b71dcfe1c6f7c23cd2414b08d73856801add30/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f353736302f312a58775a433531453161527433586331535349753234412e706e67" />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Netflix Landing Page</h3>
-                            <p>
-                                A Web First Responsive Recreation of the Netflix landing page in HTML, CSS and Javascript.
-                            </p>
-                            <a href="https://brandon-kyle-bailey.github.io/netflix-landing-page/" target="_blank">Live Demo</a>
-                            <br>
-                            <a href="https://www.github.com/brandon-kyle-bailey/netflix-landing-page" target="_blank">Source Code</a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">Python</a></li>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">JavaScript</a></li>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">React.js</a></li>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">Node.js</a></li>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">Express.js</a></li>
-            <li><a href="https://www.github.com/brandon-kyle-bailey">Amazon Web Services</a></li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="2018 - present">
-                <h3>Industrial Light & Magic</h3>
-                <h4>Pipeline Technical Director (Software Engineer)</h4>
-                <p>
-                    Development and maintenance of Enterprise Software Solutions for Data Centric Pipelines in a fast-paced, feature film production environment. Development of scalable, maintainable and intuitive API’s that facilitate efficient workflow for vendors and
-                    stakeholders. Responsible for producing concise and effective technical documentation used both in vendor teams, and client training.
-                </p>
-            </div>
-
-            <div data-date="2016 - 2018">
-                <h3>Framestore</h3>
-                <h4>Assistant Technical Director (Software Engineer)</h4>
-                <p>
-                    Providing front-line technical support to clients, and general troubleshooting of data workflows. The primary focus is ensuring efficiency and client experience satisfaction.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p>
+    <!-- Main Page Secton -->
+    
+    <main>
+       <!-- Full Screen Main Section -->
+       
+        <section id="home">
+            <div class="text-home">
+                <h1 class="wow animated fadeInRight">Hi,I'm FirstName LastName.</h1>
+                <div class="wow padding animated fadeIn">
+                    <p class="indic animated" >  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, iusto.</p>
+                    <a href="#" class="arrow-down"></a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
-    <div id="contact" class="background-alt">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
+        </section>
+        
+        <!-- About Me Section -->
+        
+        <section id="about">
+            <div class="text-about">
+                <h1 class="wow animated fadeInUp">About Me</h1>
+                <p class="wow animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa sint, sed a necessitatibus aliquid officia id recusandae sapiente, nostrum, eum cum? Voluptatum asperiores debitis dolores deserunt quam quisquam animi tenetur quibusdam minima eligendi, reprehenderit iste similique at assumenda porro doloremque atque accusamus quas libero. </p>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        
+        <section id="skills">
+            <div class="text-skills">
+                <h1 class="wow animated fadeInUp">Skills</h1>
+                    <div class="wow grid animated fadeInUp">   
+                        <div>
+                            <h3>Image Editing / Design</h3>
+                            <img src="ps.png" alt=""><p>Photoshop</p>
+                        </div>
+                        <div>
+                           <h3>Coding</h3>
+                            <img src="html.png" alt=""><p>HTML</p>
+                            <br><br>
+                            <img src="css.png" alt=""><p>CSS</p>
+                            <br><br>
+                            <img src="js.png" alt=""><p>JavaScript</p>
+                        </div> 
+                        <div>
+                            <h3>Video Editing</h3>
+                            <img src="sonyvegas.png" alt=""><p>Sony Vegas</p>
+                        </div>
+                        <div>
+                            <h3>Responsive Design</h3>
+                            <img src="responsive.png" alt="" class="responsive">
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        
+        <section id="projects">
+            <div class="text-projects">
+                <h1 class="wow animated fadeInUp">Projects</h1>
+                <h3 class="wow animated fadeInUp">Main Projects</h3>
+                <div class="wow animated fadeInUp">
+                    <a href="#"><img src="p1.jpeg" alt=""></a>
+                    <a href="#"><img src="p2.jpeg" alt=""></a>
+                </div>
+                <br><br><br>
+                <a href="#" class="wow button animated fadeIn">More Projects</a>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        
+        <section id="contact">
+            <div class="text-contact">
+               <h1 class="wow animated fadeInUp">Contact Me</h1>
+                <form action="" id="form" class="wow animated fadeInUp">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email"><br><br>
+                    <textarea name="area" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+                </form>
+                <a href="" class="wow button animated fadeIn">Submit</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 Brandon Bailey
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/brandon-kyle-bailey" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/users/10829001/brandon-bailey" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/brandon-kyle-bailey/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <a href="#"><img src="githug.svg" alt=""><p>Github</p></a>
+        <a href="#"><img src="twitter.svg" alt=""><p>Twitter</p></a><br><br>
+        <p>Made by @me</p>
     </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    
+    <!-- Script -->
+    
+    <script type="text/javascript" src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
-
 </html>
