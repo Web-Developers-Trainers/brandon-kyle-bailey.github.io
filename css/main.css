@@ -78,36 +78,6 @@
     .menu a:hover {
         color: yellow;
     }
-    /* 
-#nav {
-    background: #151616;
-    color: #fff;
-}
-
-.menu {
-    padding-top: 15px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-}
-
-.menu ul,
-.menu ul li {
-    display: inline;
-}
-
-.menu a {
-    background: #151616;
-    color: #fff;
-    display: inline;
-    margin-left: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-transform: uppercase;
-    font-size: 1.5em;
-} */
     /* Home */
     
     #home {
@@ -210,10 +180,28 @@
     }
     /* Projects */
     
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
     .card {
+        flex: 1 0 33%;
+        box-sizing: border-box;
+        margin: 1rem;
         background: white;
         margin-bottom: 2em;
-        height: 75vh;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: ease-in-out .2s;
+    }
+    
+    .card:hover {
+        transform: scale(1.01);
     }
     
     .card img {
@@ -241,31 +229,13 @@
         margin-bottom: .5em;
         font-weight: bold;
     }
-    
-    .card-content p {
-        font-size: 80%;
-    }
     /* Flexbox stuff */
     
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .card {
-        flex: 1;
-        box-sizing: border-box;
-        margin: 1rem .25em;
-    }
-    
     #projects {
-        display: block;
         text-align: center;
         background-color: #f2f2f2;
         color: #151616;
+        padding: 20px;
     }
     
     .text-projects {
@@ -353,22 +323,19 @@
     /* footer */
     
     footer {
-        height: 100px;
         background-color: #f2f2f2;
-        text-align: center;
-        padding-top: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     
-    footer img {
-        height: 25px;
-        vertical-align: sub;
-    }
-    
-    footer p {
-        display: inline;
-        font-size: 1.5em;
-        padding-right: 50px;
-        padding-left: 10px;
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     /* animations */
     
@@ -385,18 +352,6 @@
         }
     }
     /* media queries */
-    
-    @media screen and (min-width: 40em) {
-        .card {
-            max-width: calc(50% - 1em);
-        }
-    }
-    
-    @media screen and (min-width: 60em) {
-        .card {
-            max-width: calc(25% - 1em);
-        }
-    }
     
     @media(max-width:769px) {
         .menu {
@@ -420,6 +375,13 @@
         }
         .grid {
             display: block;
+        }
+        .cards {
+            flex-direction: column;
+        }
+        */
+        /* .card {
+            width: 80%;
         }
         #projects {
             height: auto;
