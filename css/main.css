@@ -1,413 +1,87 @@
-    /* Global */
-    
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
-    section {
-        white-space: wrap;
-        height: auto;
-        margin: auto;
-    }
-    
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    h1 {
-        font-size: 4em;
-    }
-    
-    .button {
-        padding: 5px;
-        width: 50%;
-        text-decoration: none;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 5px;
-        transition: 0.15s ease-in-out;
-        animation-delay: 1s;
-    }
-    
-    .button:hover {
-        background-color: black;
-        cursor: pointer;
-        color: white;
-    }
-    /* nav */
-    
-    #nav {
-        position: relative
-    }
-    
-    .menu {
-        position: absolute;
-        width: 80%;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    
-    .menu li>a {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        transition: all ease-in-out .2s;
-    }
-    
-    .menu li>a:hover {
-        /* font-size: 100px; */
-        color: red;
-    }
-    /* Home */
-    
-    #home {
-        height: 100vh;
-        width: 100%;
-        background-color: #151616;
-        color: #fff;
-        text-align: center;
-    }
-    
-    .text-home {
-        position: relative;
-        top: 30%;
-    }
-    
-    .text-home h1 {
-        font-size: 7em;
-        padding-bottom: 0.2em;
-        animation-delay: 0.5s;
-    }
-    
-    .text-home p {
-        font-size: 2em;
-        color: #ccc;
-        text-align: right;
-        width: 45%;
-        float: right;
-        padding-right: 0.5em;
-    }
-    
-    .text-home .padding {
-        padding-right: 13em;
-        animation-delay: 2s;
-    }
-    
-    .text-home .indic {
-        border-right: 2px solid #fff;
-    }
-    /* About */
-    
-    #about {
-        background-color: #f2f2f2;
-        text-align: center;
-        padding: 5%;
-    }
-    
-    .text-about {
-        color: #151616;
-        position: relative;
-        text-align: center;
-        padding: 5%;
-    }
-    
-    .text-about p {
-        color: #151616;
-        font-size: 1.5em;
-        line-height: 1.5em;
-    }
-    /* Skills */
-    
-    #skills {
-        width: 100%;
-        text-align: center;
-        color: #151616;
-    }
-    
-    .text-skills {
-        position: relative;
-        top: 10%;
-    }
-    
-    .text-skills h3 {
-        font-size: 2em;
-        padding-bottom: 2em;
-        line-height: 1.5em;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding-top: 6em;
-    }
-    
-    .grid img {
-        height: 35px;
-        vertical-align: middle;
-    }
-    
-    .grid .responsive {
-        height: 50px;
-    }
-    
-    .grid p {
-        padding-top: 5px;
-        display: block;
-    }
-    
-    .grid div {
-        line-height: 1.8em;
-    }
-    /* Projects */
-    
-    #projects {
-        text-align: center;
-        background-color: #f2f2f2;
-        color: #151616;
-        padding: 20px;
-    }
-    
-    .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: space-between;
-        justify-content: space-between;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .card {
-        flex: 30%;
-        box-sizing: border-box;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: center;
-        transition: ease-in-out .2s;
-        margin: 10px;
-        max-width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-    }
-    
-    .card:hover {
-        transform: scale(1.01);
-    }
-    
-    .card img {
-        display: block;
-        border: 0;
-        width: 100%;
-        height: auto;
-    }
-    
-    .card a {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .card a:hover {
-        box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
-    }
-    
-    .card-content {
-        padding: 1.4em;
-    }
-    
-    .card-content h2 {
-        margin-top: 0;
-        margin-bottom: .5em;
-        font-weight: bold;
-    }
-    /* Flexbox stuff */
-    
-    .text-projects {
-        position: relative;
-        top: 10%;
-        color: #151616;
-    }
-    
-    .text-projects h3 {
-        font-size: 2em;
-        padding: 2em 0 2em 0;
-        line-height: 1.5em;
-    }
-    
-    .text-projects img {
-        height: 400px;
-        padding: 0 20px 50px 20px;
-    }
-    
-    .projects-flex-grid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .project-card {
-        flex: 1;
-        margin: 5px;
-        border-radius: 5px;
-        border: 1px solid black;
-        padding: 100px;
-        width: 20%;
-    }
-    
-    .project-card img {
-        width: 50%;
-        height: 50%;
-    }
-    
-    .project-card a:hover {
-        color: red;
-    }
-    /* Contact */
-    
-    #contact {
-        width: 100%;
-        text-align: center;
-        color: #151616;
-        line-height: 5em;
-    }
-    
-    .text-contact {
-        position: relative;
-        top: 10%;
-        color: #151616;
-    }
-    
-    .text-contact h1 {
-        padding-bottom: 50px;
-    }
-    
-    #form input {
-        width: 35%;
-        height: 50px;
-        border: 1px solid #000;
-        border-radius: 10px;
-        font-size: 1.5em;
-    }
-    
-    #form textarea {
-        margin-top: -50px;
-        width: 35%;
-        height: 150px;
-        border: 1px solid #000;
-        border-radius: 10px;
-        font-size: 1.5em;
-    }
-    
-    .text-contact a {
-        font-size: 1.5em;
-    }
-    /* footer */
-    
-    footer {
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    
-    .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    /* animations */
-    
-    .indic {
-        animation: blinkTextCursor 1000ms steps(50) infinite normal;
-    }
-    
-    @keyframes blinkTextCursor {
-        from {
-            border-right-color: #fff;
-        }
-        to {
-            border-right-color: transparent;
-        }
-    }
-    /* media queries */
-    
-    @media(max-width:769px) {
-        .menu {
-            display: none;
-        }
-        .text-home {
-            top: 40%;
-        }
-        .text-home h1 {
-            font-size: 2em;
-        }
-        .text-home p {
-            float: none;
-            text-align: right;
-            width: 100%;
-            font-size: 1em;
-            padding-left: 11em;
-        }
-        .text-about p {
-            padding: 2em;
-        }
-        .grid {
-            display: block;
-        }
-        .cards {
-            flex-direction: column;
-        }
-        .card {
-            max-width: 90vw;
-        }
-        /* 
-        #projects {
-            height: auto;
-        }
-        #projects img {
-            height: 200px;
-        }
-        #skills {
-            height: auto;
-        }
-        .text-skills {
-            position: relative;
-            top: 5%;
-        }
-        .text-skills h3 {
-            font-size: 1.3em;
-            margin-top: 40px;
-        }
-        .text-contact h1 {
-            font-size: 2.5em;
-        }
-        /* .project-card {
-        flex: auto;
-    } */
-    }
+/* wow animated fadeInRight */
+
+
+/* indic animated */
+
+
+/* wow animated fadeInUp */
+
+
+/* button wow animated fadeInUp */
+
+
+/* wow button animated fadeIn */
+
+:root {}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-bar {
+    width: 70%;
+    margin: auto;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+}
+
+.navigation-menu li {
+    flex: 1;
+}
+
+#home-section {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.home-section-text {
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+.home-section-text h1 {
+    font-size: 7rem;
+    padding-bottom: 0.2rem;
+    animation-delay: 0.5s;
+}
+
+.home-section-text p {
+    font-size: 2rem;
+    text-align: right;
+    width: 45%;
+    float: right;
+    padding-right: 0.5rem;
+}
+
+.home-section-text .padding {
+    padding-right: 13rem;
+    animation-delay: 2s;
+}
+
+.home-section-text .indic {
+    border-right: 2px solid #fff;
+}
